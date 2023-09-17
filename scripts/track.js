@@ -32,7 +32,7 @@ function changeAudioTrack() {
         });
     } else {
         stopDisc();
-        alert("This disc does not appear to have audio.")
+        alert("This disc does not appear to have audio.");
     }
     changeImage();
 }
