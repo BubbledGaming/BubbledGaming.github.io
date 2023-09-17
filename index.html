@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Music Player</title>
-    </head>
-    <link rel="stylesheet" type="text/css" href="scripts/center.css"><body>
-        <div class="centered-content">
-            <img id="discImage" src="images/unlabeled_disc.png" alt="images/unlabeled_disc">
-            
-            <label for="trackInput">Enter a Track Number</label>
-            
-            <input type="number" id="trackInput" min="1" max="40" onchange="changeAudioTrack()"><br>
-            
-            <audio controls id="audioPlayer2">
-                <source id="audioPlayer2Source" src="">
-            </audio>
-        </div>
-            
-            
-            <script src="scripts/DiscChange.js"></script>
-            <script src="scripts/track.js"></script>
-            <script src="scripts/DiscSpin.js"></script>
-        </body>
-    </html>
+
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" type="text/css" href="scripts/center.css">
+</head>
+
+<body>
+    <div class="splash" style="flex-direction: column;">
+        <img src="images/unlabeled_disc.png" alt="images/unlabeled_disc">
+        hi im a splash img thing
+    </div>
+    <div class="post-splash centered-content">
+        <img id="discImage" src="images/unlabeled_disc.png" alt="images/unlabeled_disc">
+
+        <label for="trackInput">Enter a Track Number</label>
+
+        <input type="number" id="trackInput" min="1" max="40" onchange="changeAudioTrack()"><br>
+
+        <audio controls id="audioPlayer2">
+            <source id="audioPlayer2Source" src="">
+        </audio>
+    </div>
+    <script src="scripts/DiscChange.js"></script>
+    <script src="scripts/track.js"></script>
+    <script src="scripts/DiscSpin.js"></script>
+    <script src="scripts/splash.js"></script>
+</body>
+
+</html>
