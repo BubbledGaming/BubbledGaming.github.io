@@ -3,13 +3,13 @@ function changeImage() {
     var numberInput = document.getElementById("trackInput").value;
 
     var imageUrls = [
-        "Images/unlabeled_disc.png",
-        "Images/nautical_dusk_disc.png",
-        "Images/old_album_disc.png"
+        "images/unlabeled_disc.png",
+        "images/nautical_dusk_disc.png",
+        "images/old_album_disc.png"
     ];
 
     var repeatCount = 40 - 2
-    var repeatImage = "Images/old_album_disc.png"
+    var repeatImage = "images/old_album_disc.png"
 
     for (let index = 0; index < repeatCount; index++) {
         imageUrls.push(repeatImage)
