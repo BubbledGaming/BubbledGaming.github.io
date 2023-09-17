@@ -2,6 +2,8 @@ const trackInput = document.getElementById("trackInput");
 const disc = document.getElementById("discImage");
 const audioPlayer2 = document.getElementById("audioPlayer2");
 const audioSource2 = document.getElementById("audioPlayer2Source");
+const flashWrapper = document.getElementById("flashWrapper");
+const pulseWrapper = document.getElementById("pulseWrapper");
 
 const tracks = [
     //[audio, image]
@@ -30,8 +32,11 @@ function changeAudioTrack() {
             this.currentTime = 0;
             this.play();
         });
+        flashWrapper.classList.remove('flash');
+        setTimeout(function () {flashWrapper.classList.add('flash');}, 10)
     } else {
         disc.style.animationPlayState = 'paused';
+        pulseWrapper.classList.remove('pulsing')
         alert("This disc does not appear to have audio.")
     }
     changeImage();
@@ -48,7 +53,9 @@ function changeImage() {
 
 audioPlayer2.onplay = function(){
     disc.style.animationPlayState = 'running';
+    pulseWrapper.classList.add('pulsing')
 }
 audioPlayer2.onpause = function(){
     disc.style.animationPlayState = 'paused';
+    pulseWrapper.classList.remove('pulsing')
 }
