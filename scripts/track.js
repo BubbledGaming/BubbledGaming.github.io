@@ -31,8 +31,8 @@ function changeAudioTrack() {
             this.play();
         });
     } else {
-        stopDisc();
-        alert("This disc does not appear to have audio.");
+        disc.style.animationPlayState = 'paused';
+        alert("This disc does not appear to have audio.")
     }
     changeImage();
 }
@@ -47,15 +47,8 @@ function changeImage() {
 }
 
 audioPlayer2.onplay = function(){
-    disc.classList.add('rotating');
+    disc.style.animationPlayState = 'running';
 }
 audioPlayer2.onpause = function(){
-    stopDisc();
-}
-
-function stopDisc(){
-    const computedStyle = window.getComputedStyle(disc);
-    const transform = computedStyle.getPropertyValue('transform');
-    disc.classList.remove('rotating');
-    disc.style.transform = transform;
+    disc.style.animationPlayState = 'paused';
 }
