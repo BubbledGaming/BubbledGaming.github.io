@@ -5,5 +5,5 @@ setTimeout(function () {
     setTimeout(function () {
         splash.style.display = 'none';
         postsplash.style.display = document.querySelector('.centered-content').style.display
-    }, 500); // Wait for the transition to finish (0.5 seconds)
-}, 2000); // 2000ms = 2 seconds
+    }, 2000); // Wait for the transition to finish (2 seconds)
+}, 2500); // 2000ms = 2.5 seconds
