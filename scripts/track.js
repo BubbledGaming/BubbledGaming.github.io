@@ -8,10 +8,16 @@ const pulseWrapper = document.getElementById("pulseWrapper");
 const tracks = [
     //[audio, image]
     [null,                      "images/unlabeled_disc.png"], //unselectable
-    ["audio/Nautical Dusk.mp3", "images/nautical_dusk_disc.png"],
-    ["audio/infiltrate.mp3",    "images/old_album_disc.png"],
-    ["audio/Huh.mp3",           "images/old_album_disc.png"],
-    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/Shallow.mp3", "images/nautical_dusk_disc.png"],
+    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/TheFinalStrike.ogg",           "images/old_album_disc.png"],
+    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/Ambiusan.ogg",                 "images/old_album_disc.png"],
+    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/TheUnknownOne.ogg",            "images/old_album_disc.png"],
+    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/Sharan.ogg",                   "images/old_album_disc.png"],
+    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/BeamofKomZeka.ogg",            "images/old_album_disc.png"],
+    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/RegrowingTheWasteland.ogg",    "images/old_album_disc.png"],
+    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/Takora.ogg",                   "images/old_album_disc.png"],
+    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/CallofDarkness.ogg",           "images/old_album_disc.png"],
+    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/Trokan.ogg",                   "images/old_album_disc.png"],
+    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/WhenARealmDies.ogg",           "images/old_album_disc.png"]
 ];
 
 function changeAudioTrack() {
