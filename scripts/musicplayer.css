@@ -32,7 +32,11 @@ audio::-webkit-media-controls-time-remaining-display{
     justify-content: center;
     height: 100vh;
     margin-top: 20px;
-    
+    pointer-events: none;
+}
+
+.centered-content * {
+    pointer-events: auto;
 }
 
 .splash {
