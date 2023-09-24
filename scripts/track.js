@@ -9,14 +9,10 @@ const tracks = [
     //[audio, image]
     [null,                      "images/unlabeled_disc.png"], //unselectable
     ["audio/Nautical Dusk.mp3", "images/nautical_dusk_disc.png"],
-    ["audio/infiltrate.mp3",    "images/old_album_disc.png"]
+    ["audio/infiltrate.mp3",    "images/old_album_disc.png"],
+    ["audio/Huh.mp3",           "images/old_album_disc.png"],
+    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/Shallow.mp3", "images/nautical_dusk_disc.png"],
 ];
-
-//adds 38 empty disks with the old album image to the end of the tracklist
-var repeatCount = 40 - 2
-for (let index = 0; index < repeatCount; index++) {
-    tracks.push([null,"images/old_album_disc.png"])
-}
 
 function changeAudioTrack() {
     var trackNumber = parseInt(trackInput.value);
