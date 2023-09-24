@@ -2,7 +2,6 @@ body{
     background-color: black;
     color: white;
     overflow: hidden;
-    scale: 2;
     transition: transform 0.3s ease;
 }
 
@@ -97,14 +96,18 @@ audio::-webkit-media-controls-time-remaining-display{
 }
 
 /* Define breakpoints for different scaling levels */
+.doublescale {
+    scale: 2;
+}
+
 @media screen and (max-width: 600px) {
-    body {
+    .doublescale {
         transform: scale(0.7);
     }
 }
 
 @media screen and (min-width: 1200px) {
-    body {
+    .doublescale {
         transform: scale(1.2);
     }
 }
