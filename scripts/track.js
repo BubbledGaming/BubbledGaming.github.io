@@ -17,7 +17,8 @@ const tracks = [
     ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/Takora.ogg",                   "images/old_album_disc.png"],
     ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/CallofDarkness.ogg",           "images/old_album_disc.png"],
     ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/Trokan.ogg",                   "images/old_album_disc.png"],
-    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/WhenARealmDies.ogg",           "images/old_album_disc.png"]
+    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/WhenARealmDies.ogg",           "images/old_album_disc.png"],
+    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/StaticNoData.ogg",             "images/unlabeled_disc.png"]
 ];
 
 function changeAudioTrack() {
