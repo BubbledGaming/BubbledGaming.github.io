@@ -43,7 +43,7 @@ const tracks = [
     ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/OldAlbum/033KaeursWrath.ogg",                      "images/old_album_disc.png"],
     ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/OldAlbum/034RegretAndFear.ogg",                    "images/old_album_disc.png"],
     ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/OldAlbum/035Gorulahn.ogg",                         "images/old_album_disc.png"],
-    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/OldAlbum/36BeamOfKomZekaRemake.ogg",               "images/old_album_disc.png"],
+    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/OldAlbum/036BeamOfKomZekaRemake.ogg",              "images/old_album_disc.png"],
     ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/OldAlbum/037Swelden.ogg",                          "images/old_album_disc.png"],
     ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/OldAlbum/038ChristmasSong.ogg",                    "images/old_album_disc.png"],
     ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/OldAlbum/039LastTime.ogg",                         "images/old_album_disc.png"],
