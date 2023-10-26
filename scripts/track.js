@@ -130,7 +130,7 @@ const tracks = [
     ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/OldAlbumB/120MissionSuccessStarfade.ogg",          "images/old_albumtwo_disc.png"],
     ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/OldAlbumC/121TraversingThrough.ogg",               "images/old_albumthree_disc.png"],  
     ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/OldAlbumC/122UnknownDepths.ogg",                   "images/old_albumthree_disc.png"],
-    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/OldAlbumC/123LullabyOfAbsence.ogg",                "images/old_albumthree_disc.png"],
+    ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/OldAlbumC/123TheLullabyOfAbsence.ogg",                "images/old_albumthree_disc.png"],
     ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/OldAlbumC/124LowLunarOrbit.ogg",                   "images/old_albumthree_disc.png"],
     ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/OldAlbumC/125AfterDark.ogg",                       "images/old_albumthree_disc.png"],
     ["https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/OldAlbumC/126AWearySuccess.ogg",                   "images/old_albumthree_disc.png"],
