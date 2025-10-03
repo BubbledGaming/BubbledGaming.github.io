@@ -1,40 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>The Bubbledtune Radio</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="scripts/musicplayer.css">
-    <link rel="stylesheet" type="text/css" href="scripts/stars.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Legends of Alorgon — Site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="splash doublescale" style="flex-direction: column;">
-        <img src="images/splash.png" alt="images/splash">
-    </div>
-    <button id="changelogButton">Changelogs</button>
-    <button id="tracklistButton">Tracklist</button>
-    <p>Version 3w31b23<br><strong>UNSTABLE</strong></p>
-    <div class="post-splash centered-content doublescale">
-        <div id="flashWrapper">
-            <div id="pulseWrapper">
-                <img id="discImage" src="images/unlabeled_disc.png" alt="images/unlabeled_disc" class="rotating" style="animation-play-state: paused;">
+    <!-- <div class="top-banner top-banner--bg" aria-hidden="true"></div> -->
+    <img src="icons/header.png" alt="Logo" style="width:100%;">
+
+    <div class="container">
+        <!-- <header class="site-header">
+            <div class="logo">
+                <nav class="nav">
+                    <a href="#">Home</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Socials</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Profile</a>
+                </nav>
             </div>
-        </div>
+        </header> -->
 
-        <br> <!--uh-->
+        <main class="hero">
+            <div class="left">
+                <div class="video">
+                    <div class="thumbnail">
+                        <div class="play"></div>
+                    </div>
+                </div>
 
-        <input type="number" id="trackInput" min="1" max="206" onchange="changeAudioTrack()"><br>
+                <section class="blog">
+                    <div id="blog-list" class="blog-list">
+                    </div>
+                </section>
+            </div>
 
-        <audio controls id="audioPlayer2" class="neon">
-            <source id="audioPlayer2Source" src="">
-        </audio>
+            <!-- Right column: Music player -->
+            <aside class="right">
+                <div class="side-graphic">
+                    <div class="post-splash">
+                        <div id="flashWrapper">
+                            <div id="pulseWrapper">
+                                <img id="discImage" src="radio/images/unlabeled_disc.png" alt="disc"
+                                    style="max-width:80%;">
+                            </div>
+                        </div>
+                        <br>
+                        <input type="number" class="doublescale" id="trackInput" min="1" max="206"
+                            onchange="changeAudioTrack()">
+
+                        <audio controls id="audioPlayer2" class="neon">
+                            <source id="audioPlayer2Source" src="">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <!-- <button onclick="alert('test')">alert</button> -->
+                    <a class="buy-btn" href="#" id="openTracklistBtn">Open Tracklist</a>
+                </div>
+            </aside>
+        </main>
+
+        <section class="site-grid">
+
+            <div class="card">
+                <h3>Projects</h3>
+                <p><a href="#">Genesis Project</a></p>
+                <p><a href="#">Legends of Alorgon</a></p>
+                <p><a href="#">Starfade</a></p>
+            </div>
+
+
+            <div class="card">
+                <h3>Contacts</h3>
+                <ul class="projects-list contacts-list">
+                    <li><img class="icon" src="icons/youtube.svg" alt="YT"> <a href="#">Youtube</a></li>
+                    <li><img class="icon" src="icons/googleplus.svg" alt="G+"> <a href="#">Google+</a></li>
+                    <li><img class="icon" src="icons/soundcloud.svg" alt="SC"> <a href="#">SoundCloud</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <script src="blog/render.js"></script>
+        <script src="radio/scripts/track.js"></script>
     </div>
-    <script src="scripts/track.js"></script>
-    <script src="scripts/splash.js"></script>
-    <script src="scripts/WebpageChange.js"></script>
+
+    <div id="tracklistModal"
+        style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); z-index:1000; align-items:center; justify-content:center;">
+        <div
+            style="background:#222; color:#fff; max-width:600px; width:90vw; max-height:80vh; overflow:auto; padding:2em; border-radius:8px; position:relative;">
+            <button id="closeTracklistBtn"
+                style="position:absolute; top:10px; right:10px; background:#444; color:#fff; border:none; font-size:1.2em; cursor:pointer;">&times;</button>
+            <pre id="tracklistContent" style="white-space:pre-wrap;"></pre>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('openTracklistBtn').addEventListener('click', function (e) {
+            e.preventDefault();
+            fetch('radio/tracklist.txt')
+                .then(response => response.text())
+                .then(text => {
+                    // Convert lines starting with # to bigger headings
+                    const html = text.split('\n').map(line => {
+                        if (line.startsWith('# ')) {
+                            return `<div class="tracklist-h1">${line.substring(2)}</div>`;
+                        } else if (line.startsWith('## ')) {
+                            return `<div class="tracklist-h2">${line.substring(3)}</div>`;
+                        } else if (line.startsWith('### ')) {
+                            return `<div class="tracklist-h3">${line.substring(4)}</div>`;
+                        } else {
+                            return `<div>${line}</div>`;
+                        }
+                    }).join('');
+                    document.getElementById('tracklistContent').innerHTML = html;
+                    document.getElementById('tracklistModal').style.display = 'flex';
+                });
+        });
+        document.getElementById('closeTracklistBtn').addEventListener('click', function () {
+            document.getElementById('tracklistModal').style.display = 'none';
+        });
+        window.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') document.getElementById('tracklistModal').style.display = 'none';
+        });
+    </script>
 
 </body>
 

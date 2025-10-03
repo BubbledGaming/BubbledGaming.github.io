@@ -23,6 +23,7 @@
       const posts = data.posts || [];
       container.innerHTML = posts.map(p=>`
         <article class="post">
+          ${p.image ? `<img src="${p.image}" alt="${p.title}" style="width:100%;max-width:320px;border-radius:4px;margin-bottom:10px;">` : ''}
           <h4 class="post-title">${p.title}</h4>
           <div class="post-meta">${p.date}</div>
           <p class="post-excerpt">${p.excerpt}</p>

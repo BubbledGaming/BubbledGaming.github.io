@@ -49,11 +49,10 @@ body{
 .container{padding-top:6px}
 .top-banner{width:100%;display:block}
 /* Approach B: use banner as a CSS background for better focal cropping */
-.top-banner--bg{height:160px;background-image:url('banner.svg');background-size:cover;background-repeat:no-repeat}
+.top-banner--bg{height:160px;background-image:url('icons/banner.svg');background-size:cover;background-repeat:no-repeat}
 .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,0.6);border-radius:8px;display:flex;align-items:center;justify-content:center;padding:10px 14px}
 .play:after{content:'▶';color:#fff;font-size:22px}
 .description{margin-top:20px;color:var(--muted);line-height:1.6}
-.blog{margin-top:18px}
 .blog-list{display:flex;flex-direction:column;gap:12px;max-height:360px;overflow:auto;padding-right:6px}
 .blog-list::-webkit-scrollbar{width:10px;height:10px}
 .blog-list::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.06);border-radius:6px}
@@ -70,31 +69,24 @@ body{
 .side-graphic{margin-top:12px}
 .side-graphic img{border-radius:6px;display:block;margin-left:auto;margin-right:auto}
 
-.music-player{margin-top:12px;background:rgba(255,255,255,0.02);padding:10px;border-radius:6px}
-.music-player label{display:block;font-size:12px;color:var(--muted)}
-.music-player audio{width:100%;margin-top:6px}
+input{background-color: black; color: white;}
 
-/* Small fallbacks for Website 2 player classes */
-.post-splash{display:block;text-align:center}
-.centered-content{display:flex;align-items:center;justify-content:center}
-.rotating{transition:transform 0.2s linear}
-.rotating[style*="animation-play-state: running"]{animation:spin 4s linear infinite}
-@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
 .neon{box-shadow:0 0 12px rgba(255,150,0,0.15)}
-.doublescale{transform:scale(1);}
+.doublescale{transform:scale(2);}
 .footer-links{margin-top:28px;color:#bdbdbd;font-size:14px}
 .muted-link{color:#aab}
+
 /* small devices */
 @media (max-width:900px){
-  .container{flex-direction:column;padding:20px}
-  .right{width:100%}
-  /* for small screens: keep a sensible fixed thumbnail height so it doesn't collapse */
-  .video .thumbnail{aspect-ratio:initial;height:240px;min-height:180px}
+    .container{flex-direction:column;padding:20px}
+    .right{width:100%}
+    /* for small screens: keep a sensible fixed thumbnail height so it doesn't collapse */
+    .video .thumbnail{aspect-ratio:initial;height:240px;min-height:180px}
 }
 
 @media (max-width:480px){
-  .logo img{height:44px}
-  .play{padding:6px 8px}
+    .logo img{height:44px}
+    .play{padding:6px 8px}
 }
 
 /* Site grid and cards (from user's mock concept) */
@@ -108,106 +100,91 @@ body{
 .card a{color:#ffd8a6}
 
 @media (max-width:900px){
-  .site-grid{grid-template-columns:repeat(2,1fr)}
+    .site-grid{grid-template-columns:repeat(2,1fr)}
 }
 
 @media (max-width:480px){
-  .site-grid{grid-template-columns:1fr}
-}
-
-/* ---------------------------------------------------------------------------
-   Overrides: ensure the Website 2 player doesn't lock scrolling or scale huge
-   These use !important to override external CSS loaded from Website 2 when
-   present. They are intentionally narrow and safe.
-   --------------------------------------------------------------------------- */
-html, body {
-  /* allow normal page scrolling */
-  height: auto !important;
-  overflow: auto !important;
-}
-
-/* Ensure container can grow and doesn't get clipped */
-.container {
-  overflow: visible !important;
+    .site-grid{grid-template-columns:1fr}
 }
 
 /* Constrain the right column player/disc */
 .right { display:block; width:320px; max-width:38vw; box-sizing:border-box }
 .post-splash{ max-width:320px; margin:0 auto; position:relative !important; overflow:visible !important }
-#discImage{ display:block; width:150px; max-width:100%; height:auto; margin:0 auto !important; margin-top:-20px !important }
 
 /* Make the audio player compact */
 #audioPlayer2{ width:100% !important; max-width:320px; height:auto !important; }
 #trackInput{ width:88px; max-width:40%; display:block; margin:8px auto }
 
-/* If the rotating class used transforms/scale, limit visual size */
-.rotating{ max-width:150px !important; width:100%; animation-play-state: paused; }
-.rotating.running{ animation-play-state: running !important }
-.doublescale{ transform:none !important }
-
-/* remove any accidental fullscreen overlays the Website 2 CSS might add */
-.splash, .post-splash, #flashWrapper, #pulseWrapper { position: static !important }
-
-/* restore body scroll if an upstream stylesheet set html/body overflow hidden */
-body, html { overflow-y: auto !important }
-
-/* ---------------------------------------------------------------------------
-   Important fixes: restore site background, stop nested scrollbars, and
-   make the disc use margin-top so rotation animation doesn't override it.
-   --------------------------------------------------------------------------- */
-
-/* Re-apply the subtle tiled background (override Website 2 background.css) */
-body {
-  background-color: #1d1d1d !important;
-  background-image: linear-gradient(transparent 24px, rgba(0,0,0,0.05) 25px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px) !important;
-  background-size: 100% 25px, 25px 25px !important;
-  color: #e6e6e6 !important;
-}
-
-/* Ensure page can scroll and avoid nested scrollbars */
+/* Apply subtle tiled background to html and body */
 html, body {
-  height: auto !important;
-  min-height: auto !important;
-  overflow: auto !important;
+  height: 100%;
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #1d1d1d;
+  background-image:
+    linear-gradient(transparent 24px, rgba(255,255,255,0.1) 25px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 100% 25px, 25px 25px;
+  color: #e6e6e6;
 }
 
-/* Ensure Website 2 containers don't create an inner scroll area */
-.splash, .post-splash, .centered-content, #flashWrapper, #pulseWrapper {
-  overflow: visible !important;
-  max-height: none !important;
+/* Animation classes for JS control */
+.rotating {
+    animation: rotate 5s infinite;
+    animation-timing-function: linear;
+}
+ 
+@keyframes rotate {
+   from { transform: rotate(0deg); }
+   to { transform: rotate(360deg); }
 }
 
-/* Constrain the right column player/disc and use margin-top instead of transform */
-.right { display:block; width:300px; max-width:36vw; box-sizing:border-box; }
-.post-splash{ max-width:320px; margin:0 auto; position:relative !important; overflow:visible !important; }
-
-/* Use margin-top so the rotation animation (which sets transform) won't remove the vertical offset */
-#discImage {
-  display:block;
-  width:150px !important;
-  max-width:100%;
-  height:auto !important;
-  margin: -70px auto 0 auto !important; /* lift the disc visually */
-  transform: none !important;           /* remove any inline transform applied earlier */
+.pulsing {
+    animation: pulsing 1s alternate infinite;
 }
 
-/* Rotating element size cap (in case other CSS adds transforms) */
-.rotating{
-  max-width:150px !important;
-  width:100%;
-  height:auto !important;
-  animation: spin 4s linear infinite; /* keep rotation behavior (keyframes already defined) */
+@keyframes pulsing {
+    0% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+    100% {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+    }
 }
 
-/* Keep audio player compact */
-#audioPlayer2{ width:100% !important; max-width:320px; height:auto !important; }
-#trackInput{ width:88px; max-width:40%; display:block; margin:8px auto }
+.flash {
+    animation: flash 0.5s alternate-reverse;
+}
 
-/* Force Spin button style */
-#forceSpin{background:transparent;border:1px solid rgba(255,255,255,0.08);color:#e6e6e6;padding:6px 10px;border-radius:6px;font-size:13px}
+@keyframes flash {
+    0% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+    100% {
+        transform: scale(1.2);
+        filter: brightness(2);
+    }
+}
 
-/* Remove forced fullscreen/positioned overlays */
-.splash, .post-splash, #flashWrapper, #pulseWrapper { position: static !important; }
-
-/* end of overrides */
-
+/* Tracklist Markdown-style headings */
+.tracklist-h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.tracklist-h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.tracklist-h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
