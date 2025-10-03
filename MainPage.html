@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ======================================================
+             Head — meta, title, styles
+             - styles.css contains the site's CSS and has region markers
+             ====================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Legends of Alorgon — Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Website 2 player styles (optional) -->
+    <link rel="stylesheet" href="website 2 scripts/musicplayer.css">
+    <link rel="stylesheet" href="website 2 scripts/background.css">
+</head>
+<body>
+
+    <!-- #region Banner (top) ------------------------------------------------ -->
+    <!-- Full-width neon banner. Replace banner.svg in the project root to change. -->
+    <div class="top-banner top-banner--bg" aria-hidden="true"></div>
+    <!-- #endregion Banner ---------------------------------------------------- -->
+
+
+    <!-- #region Page container & header ------------------------------------- -->
+    <div class="container">
+
+        <!-- Header: logo, nav, auth -->
+        <header class="site-header">
+            <div class="logo">
+                <img src="header.png" alt="Logo">
+                <nav class="nav">
+                    <a href="#">Home</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Socials</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Profile</a>
+                </nav>
+            </div>
+        </header>
+        <!-- #endregion Header -------------------------------------------------- -->
+
+
+        <!-- #region Hero (main content) ----------------------------------------- -->
+        <main class="hero">
+
+            <!-- Left column: video + blog posts -->
+            <div class="left">
+                <!-- Video thumbnail placeholder -->
+                <div class="video">
+                    <div class="thumbnail">
+                        <div class="play"></div>
+                    </div>
+                </div>
+
+                <!-- Blog area: posts are injected into #blog-list by blog/render.js -->
+                <section class="blog">
+                    <div id="blog-list" class="blog-list">
+                        <!-- posts injected here -->
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right column: Website 2 player, disc, and CTAs -->
+            <aside class="right">
+                <div class="side-graphic">
+                    <div class="post-splash centered-content doublescale">
+                        <div id="flashWrapper">
+                            <div id="pulseWrapper">
+                                <img id="discImage" src="website 2 images/unlabeled_disc.png" alt="disc" class="rotating" style="animation-play-state: paused;max-width:100%;height:auto">
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <input type="number" id="trackInput" min="1" max="206" onchange="changeAudioTrack()"><br>
+
+                        <audio controls id="audioPlayer2" class="neon">
+                            <source id="audioPlayer2Source" src="">
+                        </audio>
+                                                <div style="margin-top:8px">
+                                                    <button id="forceSpin" class="buy-small" type="button">Force Spin</button>
+                                                </div>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <a class="buy-btn" href="#">Open Tracklist</a>
+                    <a class="buy-small" href="#">Open Changelogs</a>
+                    <description>Version 0.0 [Unstable]</description>
+                </div>
+            </aside>
+
+        </main>
+        <!-- #endregion Hero ---------------------------------------------------- -->
+
+
+        <!-- #region Site grid (cards) ------------------------------------------ -->
+        <!-- Small cards representing major site areas. Edit content directly here. -->
+        <section class="site-grid">
+
+            <div class="card">
+                <h3>Home</h3>
+                <p>Map of Gorulahn and recent highlights.</p>
+            </div>
+
+            <div class="card">
+                <h3>Projects</h3>
+                <p><a href="#">Genesis Project</a></p>
+                <p><a href="#">Legends of Alorgon</a></p>
+                <p><a href="#">Starfade</a></p>
+            </div>
+
+            <div class="card">
+                <h3>Support</h3>
+                <p>Text pointing to YT, G+ &amp; SC</p>
+            </div>
+
+            <div class="card">
+                <h3>Contacts</h3>
+                <ul class="projects-list contacts-list">
+                    <li><img class="icon" src="icons/youtube.svg" alt="YT"> <a href="#">Youtube</a></li>
+                    <li><img class="icon" src="icons/googleplus.svg" alt="G+"> <a href="#">Google+</a></li>
+                    <li><img class="icon" src="icons/soundcloud.svg" alt="SC"> <a href="#">SoundCloud</a></li>
+                </ul>
+            </div>
+
+        </section>
+        <!-- #endregion Site grid ----------------------------------------------- -->
+
+
+        <!-- Blog renderer script (loads blog/posts.json) -->
+        <script src="blog/render.js"></script>
+
+                <!-- Website 2 scripts (they depend on DOM elements present above) -->
+                <script src="website 2 scripts/track.js"></script>
+                <script src="website 2 scripts/splash.js"></script>
+                <script src="website 2 scripts/WebpageChange.js"></script>
+
+    <!-- Small integration/fallback script:
+         - clears any dynamic scaling/transforms applied by Website 2 scripts
+         - forces normal scrolling if upstream CSS/JS hid it
+         - applies a safe inline width to the disc as a last-resort fallback
+    -->
+    <script>
+      (function(){
+        // re-enable page scrolling and sensible heights
+        document.documentElement.style.setProperty('overflow','auto','important');
+        document.documentElement.style.setProperty('height','auto','important');
+        document.body.style.setProperty('overflow','auto','important');
+        document.body.style.setProperty('height','auto','important');
+
+        // neutralize dynamic transforms/scaling that Website-2 JS/CSS may apply
+        document.querySelectorAll('.doublescale, .splash, .post-splash, .centered-content').forEach(function(el){
+          try{
+            // set inline transform:none !important to override other inline styles
+            el.style.setProperty('transform','none','important');
+            el.style.setProperty('overflow','visible','important');
+            el.style.setProperty('max-height','none','important');
+          }catch(e){}
+        });
+
+        // ensure disc image uses our desired size if a script nudges it
+        var disc = document.getElementById('discImage');
+        if(disc){
+          try{
+            disc.style.setProperty('width','150px','important');
+            disc.style.setProperty('max-width','100%','important');
+            disc.style.setProperty('height','auto','important');
+            disc.style.setProperty('transform','none','important'); // remove inline transform if present
+            // if the element is paused, keep animation paused - track.js will resume it on play
+            if(!disc.style.animation || disc.style.animation.indexOf('spin') === -1){
+              disc.classList.add('rotating');
+              disc.style.animationPlayState = 'paused';
+            }
+          }catch(e){}
+        }
+
+        // small safety: if background was removed by website-2 css, re-add our tiled pattern
+        document.body.style.setProperty('background-image','linear-gradient(transparent 24px, rgba(0,0,0,0.05) 25px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px)','important');
+        document.body.style.setProperty('background-size','100% 25px, 25px 25px','important');
+      })();
+    </script>
+
+        <script>
+            // Integration helpers: Force Spin and sync disc with audio state
+            (function(){
+                const disc = document.getElementById('discImage');
+                const audio = document.getElementById('audioPlayer2');
+                const force = document.getElementById('forceSpin');
+                if(!disc) return;
+
+                // Ensure disc has rotating class
+                disc.classList.add('rotating');
+
+                // Sync with audio play/pause
+                if(audio){
+                    audio.addEventListener('play', ()=>{
+                        disc.classList.add('running');
+                        disc.style.animationPlayState = 'running';
+                    });
+                    audio.addEventListener('pause', ()=>{
+                        disc.classList.remove('running');
+                        disc.style.animationPlayState = 'paused';
+                    });
+                }
+
+                if(force){
+                    force.addEventListener('click', function(){
+                        if(disc.classList.contains('running')){
+                            disc.classList.remove('running');
+                            disc.style.animationPlayState = 'paused';
+                        } else {
+                            disc.classList.add('running');
+                            disc.style.animationPlayState = 'running';
+                        }
+                    });
+                }
+            })();
+        </script>
+
+  </div> <!-- /.container -->
+
+</body>
+</html>

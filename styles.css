@@ -1,0 +1,213 @@
+/* ---------------------------------------------------------------------------
+  styles.css — annotated
+  This file is organized into foldable sections (use your editor's folding).
+  Sections use '#region' and '#endregion' markers written as CSS comments.
+  Example markers are present below and can be folded in editors like VS Code.
+  --------------------------------------------------------------------------- */
+
+/* #region Theme variables */
+:root{
+  --bg-dark:#222;
+  --panel:#333;
+  --accent:#ff9100;
+  --muted:#bdbdbd;
+}
+/* #endregion Theme variables */
+
+/* #region Base reset & fonts */
+html,body{height:100%;margin:0;font-family: 'Helvetica Neue', Arial, sans-serif;background:#1f1f1f;}
+/* #endregion Base reset & fonts */
+
+/* #region Page background (subtle tile) */
+/* subtle repeating pixel pattern to mimic fabric */
+body{
+  background-color:#1d1d1d;
+  background-image: linear-gradient(transparent 24px, rgba(0,0,0,0.05) 25px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 100% 25px, 25px 25px;
+  color:#e6e6e6;
+}
+/* #endregion Page background */
+.container{max-width:1100px;margin:40px auto;padding:0 20px;display:flex;flex-direction:column;gap:40px;align-items:stretch}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;width:100%}
+.logo{display:flex;align-items:center;gap:18px}
+.logo img{height:56px}
+.nav{display:flex;gap:18px;align-items:center}
+.nav a{color:#dcdcdc;text-decoration:none;font-weight:600}
+.hero{display:flex;gap:40px}
+.left{flex:1;min-width:0}
+.right{width:320px;text-align:center}
+.video{background:#111;border-radius:4px;padding:12px}
+.video .thumbnail{width:100%;aspect-ratio:16/9;background:linear-gradient(45deg,#123,#234);border-radius:4px;position:relative;overflow:hidden;display:block;min-height:200px;max-height:560px}
+.video .thumbnail img{width:100%;height:100%;object-fit:cover;display:block}
+.video .play{width:72px;height:48px}
+
+/* Make header sticky: keep it at top and add a subtle backdrop */
+.site-header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg, rgba(31,31,31,0.95), rgba(31,31,31,0.9));backdrop-filter: blur(2px);padding-top:14px;padding-bottom:14px}
+.site-header .logo img{height:56px}
+
+/* Prevent the hero content from hiding under the sticky header by adding top padding to the container */
+.container{padding-top:6px}
+.top-banner{width:100%;display:block}
+/* Approach B: use banner as a CSS background for better focal cropping */
+.top-banner--bg{height:160px;background-image:url('banner.svg');background-size:cover;background-repeat:no-repeat}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,0.6);border-radius:8px;display:flex;align-items:center;justify-content:center;padding:10px 14px}
+.play:after{content:'▶';color:#fff;font-size:22px}
+.description{margin-top:20px;color:var(--muted);line-height:1.6}
+.blog{margin-top:18px}
+.blog-list{display:flex;flex-direction:column;gap:12px;max-height:360px;overflow:auto;padding-right:6px}
+.blog-list::-webkit-scrollbar{width:10px;height:10px}
+.blog-list::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.06);border-radius:6px}
+.blog-list::-webkit-scrollbar-track{background:transparent}
+/* Firefox scrollbar */
+.blog-list{scrollbar-width:thin;scrollbar-color:rgba(255,255,255,0.06) transparent}
+.post{background:rgba(255,255,255,0.03);padding:12px;border-radius:6px}
+.post-title{margin:0 0 6px 0}
+.post-meta{font-size:12px;color:var(--muted);margin-bottom:8px}
+.post-excerpt{margin:0;color:#ddd}
+.cta{margin-top:28px}
+.buy-btn{display:inline-block;background:var(--accent);color:#fff;padding:14px 32px;border-radius:8px;font-weight:700;text-decoration:none;box-shadow:0 6px 0 rgba(0,0,0,0.35);border:1px solid rgba(0,0,0,0.2)}
+.buy-small{display:block;margin-top:12px;color:#b6b6ff;text-decoration:none}
+.side-graphic{margin-top:12px}
+.side-graphic img{border-radius:6px;display:block;margin-left:auto;margin-right:auto}
+
+.music-player{margin-top:12px;background:rgba(255,255,255,0.02);padding:10px;border-radius:6px}
+.music-player label{display:block;font-size:12px;color:var(--muted)}
+.music-player audio{width:100%;margin-top:6px}
+
+/* Small fallbacks for Website 2 player classes */
+.post-splash{display:block;text-align:center}
+.centered-content{display:flex;align-items:center;justify-content:center}
+.rotating{transition:transform 0.2s linear}
+.rotating[style*="animation-play-state: running"]{animation:spin 4s linear infinite}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.neon{box-shadow:0 0 12px rgba(255,150,0,0.15)}
+.doublescale{transform:scale(1);}
+.footer-links{margin-top:28px;color:#bdbdbd;font-size:14px}
+.muted-link{color:#aab}
+/* small devices */
+@media (max-width:900px){
+  .container{flex-direction:column;padding:20px}
+  .right{width:100%}
+  /* for small screens: keep a sensible fixed thumbnail height so it doesn't collapse */
+  .video .thumbnail{aspect-ratio:initial;height:240px;min-height:180px}
+}
+
+@media (max-width:480px){
+  .logo img{height:44px}
+  .play{padding:6px 8px}
+}
+
+/* Site grid and cards (from user's mock concept) */
+.site-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}
+.card{background:rgba(0,0,0,0.35);padding:18px;border-radius:6px;min-height:80px}
+.card h3{margin:0 0 8px 0;color:#fff}
+.projects-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+.projects-list li{background:rgba(255,255,255,0.06);padding:10px;border-radius:4px}
+.card img.icon{width:28px;height:20px;display:inline-block;vertical-align:middle;margin-right:10px}
+.contacts-list a{color:#e6e6e6;text-decoration:none}
+.card a{color:#ffd8a6}
+
+@media (max-width:900px){
+  .site-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media (max-width:480px){
+  .site-grid{grid-template-columns:1fr}
+}
+
+/* ---------------------------------------------------------------------------
+   Overrides: ensure the Website 2 player doesn't lock scrolling or scale huge
+   These use !important to override external CSS loaded from Website 2 when
+   present. They are intentionally narrow and safe.
+   --------------------------------------------------------------------------- */
+html, body {
+  /* allow normal page scrolling */
+  height: auto !important;
+  overflow: auto !important;
+}
+
+/* Ensure container can grow and doesn't get clipped */
+.container {
+  overflow: visible !important;
+}
+
+/* Constrain the right column player/disc */
+.right { display:block; width:320px; max-width:38vw; box-sizing:border-box }
+.post-splash{ max-width:320px; margin:0 auto; position:relative !important; overflow:visible !important }
+#discImage{ display:block; width:150px; max-width:100%; height:auto; margin:0 auto !important; margin-top:-20px !important }
+
+/* Make the audio player compact */
+#audioPlayer2{ width:100% !important; max-width:320px; height:auto !important; }
+#trackInput{ width:88px; max-width:40%; display:block; margin:8px auto }
+
+/* If the rotating class used transforms/scale, limit visual size */
+.rotating{ max-width:150px !important; width:100%; animation-play-state: paused; }
+.rotating.running{ animation-play-state: running !important }
+.doublescale{ transform:none !important }
+
+/* remove any accidental fullscreen overlays the Website 2 CSS might add */
+.splash, .post-splash, #flashWrapper, #pulseWrapper { position: static !important }
+
+/* restore body scroll if an upstream stylesheet set html/body overflow hidden */
+body, html { overflow-y: auto !important }
+
+/* ---------------------------------------------------------------------------
+   Important fixes: restore site background, stop nested scrollbars, and
+   make the disc use margin-top so rotation animation doesn't override it.
+   --------------------------------------------------------------------------- */
+
+/* Re-apply the subtle tiled background (override Website 2 background.css) */
+body {
+  background-color: #1d1d1d !important;
+  background-image: linear-gradient(transparent 24px, rgba(0,0,0,0.05) 25px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px) !important;
+  background-size: 100% 25px, 25px 25px !important;
+  color: #e6e6e6 !important;
+}
+
+/* Ensure page can scroll and avoid nested scrollbars */
+html, body {
+  height: auto !important;
+  min-height: auto !important;
+  overflow: auto !important;
+}
+
+/* Ensure Website 2 containers don't create an inner scroll area */
+.splash, .post-splash, .centered-content, #flashWrapper, #pulseWrapper {
+  overflow: visible !important;
+  max-height: none !important;
+}
+
+/* Constrain the right column player/disc and use margin-top instead of transform */
+.right { display:block; width:300px; max-width:36vw; box-sizing:border-box; }
+.post-splash{ max-width:320px; margin:0 auto; position:relative !important; overflow:visible !important; }
+
+/* Use margin-top so the rotation animation (which sets transform) won't remove the vertical offset */
+#discImage {
+  display:block;
+  width:150px !important;
+  max-width:100%;
+  height:auto !important;
+  margin: -70px auto 0 auto !important; /* lift the disc visually */
+  transform: none !important;           /* remove any inline transform applied earlier */
+}
+
+/* Rotating element size cap (in case other CSS adds transforms) */
+.rotating{
+  max-width:150px !important;
+  width:100%;
+  height:auto !important;
+  animation: spin 4s linear infinite; /* keep rotation behavior (keyframes already defined) */
+}
+
+/* Keep audio player compact */
+#audioPlayer2{ width:100% !important; max-width:320px; height:auto !important; }
+#trackInput{ width:88px; max-width:40%; display:block; margin:8px auto }
+
+/* Force Spin button style */
+#forceSpin{background:transparent;border:1px solid rgba(255,255,255,0.08);color:#e6e6e6;padding:6px 10px;border-radius:6px;font-size:13px}
+
+/* Remove forced fullscreen/positioned overlays */
+.splash, .post-splash, #flashWrapper, #pulseWrapper { position: static !important; }
+
+/* end of overrides */
+
