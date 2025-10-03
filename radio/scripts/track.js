@@ -219,7 +219,7 @@ const tracks = [
 console.log(tracks.length - 2)
 
 function changeAudioTrack() {
-    var trackNumber = parseInt(trackInput.value);
+    var trackNumber = Math.abs(parseInt(trackInput.value)) || 1;
     trackNumber = Math.min(trackNumber,tracks.length-1) //Limit
     const selectedTrack = "https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/" + tracks[trackNumber][0];
 
@@ -244,6 +244,7 @@ function changeAudioTrack() {
 function changeImage() {
     var imageElement = document.getElementById("discImage");
     var numberInput = document.getElementById("trackInput").value;
+    numberInput = Math.abs(parseInt(numberInput)) || 1
     numberInput = Math.min(numberInput,tracks.length-1) //Limit
 
     var imageUrl = tracks[numberInput][1] || tracks[0][1];
