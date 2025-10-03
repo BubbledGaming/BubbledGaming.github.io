@@ -4,26 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Legends of Alorgon — Site</title>
+    <title>The Dragons Den</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- <div class="top-banner top-banner--bg" aria-hidden="true"></div> -->
-    <img src="icons/header.png" alt="Logo" style="width:100%;">
+    <img src="icons/header.png" alt="If you're seeing this, you're a fish." style="width:100%;">
 
     <div class="container">
-        <!-- <header class="site-header">
+        <header class="site-header">
             <div class="logo">
                 <nav class="nav">
                     <a href="#">Home</a>
                     <a href="#">Projects</a>
                     <a href="#">Socials</a>
-                    <a href="#">Contacts</a>
-                    <a href="#">Profile</a>
+                    <a href="#">Support</a>
+                    <a href="#">About</a>
                 </nav>
             </div>
-        </header> -->
+        </header>
 
         <main class="hero">
             <div class="left">
@@ -40,14 +39,28 @@
             </div>
 
             <!-- Right column: Music player -->
-            <aside class="right">
+            <aside class="right">            
                 <div class="side-graphic">
                     <div class="post-splash">
+                        <!-- Add track info display -->
+                        <div class="track-info" style="margin-bottom: 20px; text-align: center;">
+                            <div id="trackDate" style="font-size: 14px; color: #999;">-</div>
+                            <div id="trackTitle" style="font-size: 24px; color: #fff; margin-bottom: 8px;">-</div>
+                            <div id="trackAlbum" style="font-size: 14px; color: #999;">-</div>
+                        </div>
+                        <!-- Existing disc and controls below -->
                         <div id="flashWrapper">
                             <div id="pulseWrapper">
                                 <img id="discImage" src="radio/images/unlabeled_disc.png" alt="disc"
                                     style="max-width:80%;">
+                                    
                             </div>
+                        </div>
+                        <br>
+                        <!-- Player controls row: Play/Pause (left) and Volume (right) -->
+                        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; max-width:320px; margin:0 auto;">
+                            <button id="playPauseBtn" style="width:64px; height:48px; border-radius:8px; background:#111; color:#fff; border:2px solid var(--accent); cursor:pointer;">Play</button>
+                            <input id="volumeSlider" type="range" min="0" max="1" step="0.01" value="1" style="flex:1;">
                         </div>
                         <br>
                         <input type="number" class="doublescale" id="trackInput" min="1" max="206"

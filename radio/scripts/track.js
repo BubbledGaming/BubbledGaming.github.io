@@ -4,6 +4,11 @@ const audioPlayer2 = document.getElementById("audioPlayer2");
 const audioSource2 = document.getElementById("audioPlayer2Source");
 const flashWrapper = document.getElementById("flashWrapper");
 const pulseWrapper = document.getElementById("pulseWrapper");
+const playPauseBtn = document.getElementById("playPauseBtn");
+const volumeSlider = document.getElementById("volumeSlider");
+const trackTitle = document.getElementById("trackTitle");
+const trackAlbum = document.getElementById("trackAlbum");
+const trackDate = document.getElementById("trackDate");
 
 let tracks = [];
 
@@ -18,6 +23,10 @@ fetch('radio/tracks.json')
         trackInput.max = maxId;
         trackInput.value = 1;
         changeImage();
+        // apply initial volume from slider if present
+        if (volumeSlider) {
+            audioPlayer2.volume = parseFloat(volumeSlider.value);
+        }
     })
     .catch(err => {
         console.error('Failed to load tracks.json', err);
@@ -28,9 +37,14 @@ function changeAudioTrack() {
         alert('Track list not loaded yet.');
         return;
     }
-    var trackNumber = Math.abs(parseInt(trackInput.value)) || 1;
-    trackNumber = Math.min(trackNumber, tracks.length - 1); // Limit
+    var trackNumber = Math.abs(parseInt(trackInput.value)) || 9001;
     const trackObj = tracks[trackNumber] || {};
+
+    // Update title and album display
+    trackTitle.textContent = trackObj.title || 'Invalid Track';
+    trackAlbum.textContent = trackObj.album || 'Invalid Album';
+    trackDate.textContent = trackObj.date || 'Invalid Date';
+
     // audio may be null when not provided; keep full URL if present
     const selectedTrack = trackObj.audio ? ("https://github.com/BubbledGaming/Bubbletune-Radio-Music/raw/main/Music/" + trackObj.audio) : null;
 
@@ -50,6 +64,33 @@ function changeAudioTrack() {
         alert("This disc does not appear to have audio.")
     }
     changeImage();
+}
+
+// Play/Pause button behavior
+if (playPauseBtn) {
+    playPauseBtn.addEventListener('click', function () {
+        if (audioPlayer2.paused) {
+            audioPlayer2.play();
+        } else {
+            audioPlayer2.pause();
+        }
+    });
+}
+
+// Update button text based on audio state
+audioPlayer2.addEventListener('play', function () {
+    if (playPauseBtn) playPauseBtn.textContent = 'Pause';
+});
+audioPlayer2.addEventListener('pause', function () {
+    if (playPauseBtn) playPauseBtn.textContent = 'Play';
+});
+
+// Volume slider control
+if (volumeSlider) {
+    volumeSlider.addEventListener('input', function (e) {
+        const v = parseFloat(e.target.value);
+        audioPlayer2.volume = isNaN(v) ? 1 : v;
+    });
 }
 
 function changeImage() {

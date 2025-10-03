@@ -27,7 +27,7 @@ body{
   color:#e6e6e6;
 }
 /* #endregion Page background */
-.container{max-width:1100px;margin:40px auto;padding:0 20px;display:flex;flex-direction:column;gap:40px;align-items:stretch}
+.container{max-width:1100px;margin:-10px auto;padding:0 20px;display:flex;flex-direction:column;gap:40px;align-items:stretch}
 .site-header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;width:100%}
 .logo{display:flex;align-items:center;gap:18px}
 .logo img{height:56px}
@@ -43,7 +43,6 @@ body{
 
 /* Make header sticky: keep it at top and add a subtle backdrop */
 .site-header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg, rgba(31,31,31,0.95), rgba(31,31,31,0.9));backdrop-filter: blur(2px);padding-top:14px;padding-bottom:14px}
-.site-header .logo img{height:56px}
 
 /* Prevent the hero content from hiding under the sticky header by adding top padding to the container */
 .container{padding-top:6px}

@@ -4,11 +4,12 @@
     "title": "Invalid",
     "album": "Invalid",
     "image": "radio/images/unlabeled_disc.png",
-    "audio": null
+    "audio": ""
   },
   {
     "id": 1,
     "title": "The Final Strike",
+    "date": "02-04-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/001TheFinalStrike.ogg"
@@ -16,6 +17,7 @@
   {
     "id": 2,
     "title": "Ambiusan",
+    "date": "02-05-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/002Ambiusan.ogg"
@@ -23,6 +25,7 @@
   {
     "id": 3,
     "title": "The Unknown One",
+    "date": "02-05-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/003TheUnknownOne.ogg"
@@ -30,6 +33,7 @@
   {
     "id": 4,
     "title": "Sharan",
+    "date": "02-05-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/004Sharan.ogg"
@@ -37,6 +41,7 @@
   {
     "id": 5,
     "title": "Forgotten Void",
+    "date": "02-09-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/005ForgottenVoid.ogg"
@@ -44,6 +49,7 @@
   {
     "id": 6,
     "title": "Beam of Kom'zeka",
+    "date": "02-12-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/006BeamOfKomZeka.ogg"
@@ -51,6 +57,7 @@
   {
     "id": 7,
     "title": "Regrowing the Wasteland",
+    "date": "02-20-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/007RegrowingTheWasteland.ogg"
@@ -58,6 +65,7 @@
   {
     "id": 8,
     "title": "Takora",
+    "date": "02-24-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/008Takora.ogg"
@@ -65,6 +73,7 @@
   {
     "id": 9,
     "title": "Call of Darkness",
+    "date": "03-11-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/009CallofDarkness.ogg"
@@ -72,13 +81,15 @@
   {
     "id": 10,
     "title": "It's Over",
+    "date": "03-24-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/010ItsOver.ogg"
   },
   {
     "id": 11,
-    "title": "Trokan",
+    "title": "Trokan's Revival",
+    "date": "04-05-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/011Trokan.ogg"
@@ -86,6 +97,7 @@
   {
     "id": 12,
     "title": "When a Realm Dies",
+    "date": "04-12-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/012WhenARealmDies.ogg"
@@ -93,6 +105,7 @@
   {
     "id": 13,
     "title": "Void Corruption",
+    "date": "04-18-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/013VoidCorruption.ogg"
@@ -100,6 +113,7 @@
   {
     "id": 14,
     "title": "The Last Snow",
+    "date": "04-27-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/014TheLastSnow.ogg"
@@ -107,6 +121,7 @@
   {
     "id": 15,
     "title": "Sheralience Zone",
+    "date": "05-06-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/015SheralienceZone.ogg"
@@ -114,6 +129,7 @@
   {
     "id": 16,
     "title": "Seliric",
+    "date": "05-16-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/016Seliric.ogg"
@@ -121,6 +137,7 @@
   {
     "id": 17,
     "title": "Suffer",
+    "date": "05-16-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/017Suffer.ogg"
@@ -128,6 +145,7 @@
   {
     "id": 18,
     "title": "Computerized Fate",
+    "date": "06-04-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/018ComputerizedFate.ogg"
@@ -135,6 +153,7 @@
   {
     "id": 19,
     "title": "Eye of Ruaria",
+    "date": "06-16-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/019EyeOfRuaria.ogg"
@@ -142,6 +161,7 @@
   {
     "id": 20,
     "title": "Toro'ka's Return",
+    "date": "06-23-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/020TorokasReturn.ogg"
@@ -149,6 +169,7 @@
   {
     "id": 21,
     "title": "Piercing Importation",
+    "date": "07-12-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/021PiercingImportation.ogg"
@@ -156,6 +177,7 @@
   {
     "id": 22,
     "title": "End of Wastaria",
+    "date": "07-13-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/022EndOfWastaria.ogg"
@@ -163,6 +185,7 @@
   {
     "id": 23,
     "title": "Entering Hyperwarp",
+    "date": "07-14-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/023EnteringHyperWarp.ogg"
@@ -170,6 +193,7 @@
   {
     "id": 24,
     "title": "Blazes",
+    "date": "07-21-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/024Blazes.ogg"
@@ -177,6 +201,7 @@
   {
     "id": 25,
     "title": "Blazing Heat",
+    "date": "07-21-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/025BlazingHeat.ogg"
@@ -184,6 +209,7 @@
   {
     "id": 26,
     "title": "Between Worlds",
+    "date": "07-30-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/026BetweenWorlds.ogg"
@@ -191,6 +217,7 @@
   {
     "id": 27,
     "title": "Devourer's Arrival",
+    "date": "08-03-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/027DevourersArrival.ogg"
@@ -198,6 +225,7 @@
   {
     "id": 28,
     "title": "Relo's Vengence",
+    "date": "08-12-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/028RelosVengence.ogg"
@@ -205,6 +233,7 @@
   {
     "id": 29,
     "title": "Nightly Activities",
+    "date": "08-20-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/029NightlyActivities.ogg"
@@ -212,6 +241,7 @@
   {
     "id": 30,
     "title": "The Resting Place",
+    "date": "09-23-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/030TheRestingPlace.ogg"
@@ -219,6 +249,7 @@
   {
     "id": 31,
     "title": "Cliff of Sorrows",
+    "date": "09-25-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/031CliffOfSorrows.ogg"
@@ -226,6 +257,7 @@
   {
     "id": 32,
     "title": "Faded Hope",
+    "date": "10-25-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/032FadedHope.ogg"
@@ -233,6 +265,7 @@
   {
     "id": 33,
     "title": "Kaeur's Wrath",
+    "date": "11-05-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/033KaeursWrath.ogg"
@@ -240,6 +273,7 @@
   {
     "id": 34,
     "title": "Regret and Fear",
+    "date": "11-12-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/034RegretAndFear.ogg"
@@ -247,6 +281,7 @@
   {
     "id": 35,
     "title": "Gorulahn",
+    "date": "12-09-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/035Gorulahn.ogg"
@@ -254,6 +289,7 @@
   {
     "id": 36,
     "title": "Beam of Kom'zeka (Remake)",
+    "date": "12-14-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/036BeamOfKomZekaRemake.ogg"
@@ -261,6 +297,7 @@
   {
     "id": 37,
     "title": "Swelden",
+    "date": "12-19-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/037Swelden.ogg"
@@ -268,27 +305,31 @@
   {
     "id": 38,
     "title": "Christmas Song",
+    "date": "12-24-2017",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/038ChristmasSong.ogg"
   },
   {
     "id": 39,
-    "title": "Last Time",
-    "album": "Old Album",
-    "image": "radio/images/old_album_disc.png",
-    "audio": "OldAlbum/039LastTime.ogg"
-  },
-  {
-    "id": 40,
     "title": "Nightly Inactivities",
+    "date": "01-14-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/040NightlyInactivities.ogg"
   },
   {
+    "id": 40,
+    "title": "Last Time",
+    "date": "01-22-2018",
+    "album": "Old Album",
+    "image": "radio/images/old_album_disc.png",
+    "audio": "OldAlbum/039LastTime.ogg"
+  },
+  {
     "id": 41,
     "title": "Corrupter's Return",
+    "date": "01-28-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/041CorruptersReturn.ogg"
@@ -296,6 +337,7 @@
   {
     "id": 42,
     "title": "The Corrupt God",
+    "date": "01-28-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/042TheCorruptGod.ogg"
@@ -303,6 +345,7 @@
   {
     "id": 43,
     "title": "Beam of Kom'zeka First Appearance",
+    "date": "02-05-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/043BeamOfKomZekaFirstAppearance.ogg"
@@ -310,6 +353,7 @@
   {
     "id": 44,
     "title": "StormForge",
+    "date": "02-05-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/044StormForge.ogg"
@@ -317,6 +361,7 @@
   {
     "id": 45,
     "title": "Rat Hunt",
+    "date": "02-05-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/045RatHunt.ogg"
@@ -324,6 +369,7 @@
   {
     "id": 46,
     "title": "Loss of Company",
+    "date": "02-15-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/046LossOfCompany.ogg"
@@ -331,6 +377,7 @@
   {
     "id": 47,
     "title": "I'm Not Dead",
+    "date": "03-12-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/047ImNotDead.ogg"
@@ -338,6 +385,7 @@
   {
     "id": 48,
     "title": "Invert Bubbled's Theme",
+    "date": "04-10-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/048InvertBubbledsTheme.ogg"
@@ -345,6 +393,7 @@
   {
     "id": 49,
     "title": "Old Untitled 1",
+    "date": "04-15-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/049OldUntitled1.ogg"
@@ -352,6 +401,7 @@
   {
     "id": 50,
     "title": "Old Untitled 2",
+    "date": "04-16-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/050OldUntitled2.ogg"
@@ -359,6 +409,7 @@
   {
     "id": 51,
     "title": "Old Untitled 3",
+    "date": "04-18-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/051OldUntitled3.ogg"
@@ -366,6 +417,7 @@
   {
     "id": 52,
     "title": "Old Untitled 4",
+    "date": "04-20-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/052OldUntitled4.ogg"
@@ -373,6 +425,7 @@
   {
     "id": 53,
     "title": "Breaking the Silence",
+    "date": "05-20-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/053BreakingTheSilence.ogg"
@@ -380,6 +433,7 @@
   {
     "id": 54,
     "title": "The Last Snow 2",
+    "date": "04-20-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/054TheLastSnow2.ogg"
@@ -387,6 +441,7 @@
   {
     "id": 55,
     "title": "Interuniversal Space",
+    "date": "06-09-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/055InteruniversalSpace.ogg"
@@ -394,6 +449,7 @@
   {
     "id": 56,
     "title": "Takor's Death",
+    "date": "06-09-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/056TakorsDeath.ogg"
@@ -401,6 +457,7 @@
   {
     "id": 57,
     "title": "Loss",
+    "date": "06-09-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/057Loss.ogg"
@@ -408,6 +465,7 @@
   {
     "id": 58,
     "title": "Old Untitled 5",
+    "date": "06-14-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/058OldUntitled5.ogg"
@@ -415,6 +473,7 @@
   {
     "id": 59,
     "title": "Old Untitled 6",
+    "date": "06-14-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/059OldUntitled6.ogg"
@@ -422,6 +481,7 @@
   {
     "id": 60,
     "title": "Old Untitled 7",
+    "date": "06-14-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/060OldUntitled7.ogg"
@@ -429,6 +489,7 @@
   {
     "id": 61,
     "title": "Old Untitled 8",
+    "date": "06-14-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/061OldUntitled8.ogg"
@@ -436,6 +497,7 @@
   {
     "id": 62,
     "title": "Corrosphir",
+    "date": "06-28-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/062Corrosphir.ogg"
@@ -443,6 +505,7 @@
   {
     "id": 63,
     "title": "Voitarium Crossing",
+    "date": "07-06-2018",
     "album": "Old Album",
     "image": "radio/images/old_album_disc.png",
     "audio": "OldAlbum/063VoitariumCrossing.ogg"
@@ -450,6 +513,7 @@
   {
     "id": 64,
     "title": "Starfade Beginning",
+    "date": "01-14-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/064StarfadeBeginning.ogg"
@@ -457,6 +521,7 @@
   {
     "id": 65,
     "title": "Starfade Menu",
+    "date": "01-14-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/065StarfadeMenu.ogg"
@@ -464,6 +529,7 @@
   {
     "id": 66,
     "title": "Quazora",
+    "date": "01-14-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/066Quazora.ogg"
@@ -471,6 +537,7 @@
   {
     "id": 67,
     "title": "Varican",
+    "date": "01-14-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/067Varican.ogg"
@@ -478,6 +545,7 @@
   {
     "id": 68,
     "title": "Battle of Drones",
+    "date": "01-14-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/068BattleOfDrones.ogg"
@@ -485,6 +553,7 @@
   {
     "id": 69,
     "title": "Desertalis",
+    "date": "01-14-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/069Desertalis.ogg"
@@ -492,6 +561,7 @@
   {
     "id": 70,
     "title": "Detalias",
+    "date": "01-14-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/070Detalias.ogg"
@@ -499,6 +569,7 @@
   {
     "id": 71,
     "title": "Alien Waves",
+    "date": "01-14-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/071AlienWaves.ogg"
@@ -506,6 +577,7 @@
   {
     "id": 72,
     "title": "Sharkic Attack",
+    "date": "01-14-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/072SharkicAttack.ogg"
@@ -513,6 +585,7 @@
   {
     "id": 73,
     "title": "Dorrdeta",
+    "date": "02-05-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/073Dorrdeta.ogg"
@@ -520,6 +593,7 @@
   {
     "id": 74,
     "title": "System Delayed",
+    "date": "02-05-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/074SystemDelayed.ogg"
@@ -527,6 +601,7 @@
   {
     "id": 75,
     "title": "Solar Blast",
+    "date": "02-05-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/075SolarBlast.ogg"
@@ -534,6 +609,7 @@
   {
     "id": 76,
     "title": "Hyper Jumper",
+    "date": "02-05-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/076HyperJumper.ogg"
@@ -541,6 +617,7 @@
   {
     "id": 77,
     "title": "Savarak",
+    "date": "02-05-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/077Savarak.ogg"
@@ -548,6 +625,7 @@
   {
     "id": 78,
     "title": "Mastermind",
+    "date": "02-05-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/078Mastermind.ogg"
@@ -555,6 +633,7 @@
   {
     "id": 79,
     "title": "Derokus",
+    "date": "02-05-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/079Derokus.ogg"
@@ -562,6 +641,7 @@
   {
     "id": 80,
     "title": "Danhuerz",
+    "date": "02-22-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/080Danhuerz.ogg"
@@ -569,6 +649,7 @@
   {
     "id": 81,
     "title": "Lunarios",
+    "date": "02-22-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/081Lunarios.ogg"
@@ -576,6 +657,7 @@
   {
     "id": 82,
     "title": "Laitoros",
+    "date": "02-22-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/082Laitoros.ogg"
@@ -583,6 +665,7 @@
   {
     "id": 83,
     "title": "MaeukLezola",
+    "date": "02-22-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/083MaeukLezola.ogg"
@@ -590,6 +673,7 @@
   {
     "id": 84,
     "title": "Barrosak",
+    "date": "02-22-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/084Barrosak.ogg"
@@ -597,6 +681,7 @@
   {
     "id": 85,
     "title": "Abyss",
+    "date": "02-5-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/085Abyss.ogg"
@@ -604,6 +689,7 @@
   {
     "id": 86,
     "title": "Abyss (Remake)",
+    "date": "??-?-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/086AbyssRemake.ogg"
@@ -611,6 +697,7 @@
   {
     "id": 87,
     "title": "Into Darkness",
+    "date": "??-?-2018",
     "album": "Starfade",
     "image": "radio/images/starfade_album_disc.png",
     "audio": "StarfadeAlbum/087IntoDarkness.ogg"
@@ -618,6 +705,7 @@
   {
     "id": 88,
     "title": "Disappearance",
+    "date": "??-?-2018",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/088Disappearance.ogg"
@@ -625,6 +713,7 @@
   {
     "id": 89,
     "title": "Memories",
+    "date": "??-?-2018",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/089Memories.ogg"
@@ -632,6 +721,7 @@
   {
     "id": 90,
     "title": "Analasisesium",
+    "date": "08-22-2018",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/090Analasisesium.ogg"
@@ -639,6 +729,7 @@
   {
     "id": 91,
     "title": "The Final Strike (Remake)",
+    "date": "08-29-2018",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/091TheFinalStrikeRemake.ogg"
@@ -646,6 +737,7 @@
   {
     "id": 92,
     "title": "Old Untitled 9",
+    "date": "09-12-2018",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/092OldUntitled9.ogg"
@@ -653,6 +745,7 @@
   {
     "id": 93,
     "title": "Old Untitled 10",
+    "date": "09-21-2018",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/093OldUntitled10.ogg"
@@ -660,6 +753,7 @@
   {
     "id": 94,
     "title": "Sound Awake",
+    "date": "12-11-2018",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/094SoundAwake.ogg"
@@ -667,6 +761,7 @@
   {
     "id": 95,
     "title": "New Year, New World.",
+    "date": "01-01-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/095NewYearNewWorld.ogg"
@@ -674,6 +769,7 @@
   {
     "id": 96,
     "title": "New Area!",
+    "date": "01-05-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/096NewArea.ogg"
@@ -681,6 +777,7 @@
   {
     "id": 97,
     "title": "Anguish of Forgetting",
+    "date": "01-20-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/097AnguishOfForgetting.ogg"
@@ -688,6 +785,7 @@
   {
     "id": 98,
     "title": "Call of Darkness (Remake)",
+    "date": "01-24-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/098CallOfDarkness.ogg"
@@ -695,6 +793,7 @@
   {
     "id": 99,
     "title": "Valentine",
+    "date": "02-07-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/099Valentine.ogg"
@@ -702,6 +801,7 @@
   {
     "id": 100,
     "title": "Stardust",
+    "date": "02-28-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/100Stardust.ogg"
@@ -709,6 +809,7 @@
   {
     "id": 101,
     "title": "The White Void",
+    "date": "05-19-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/101TheWhiteVoid.ogg"
@@ -716,6 +817,7 @@
   {
     "id": 102,
     "title": "An Odd Projection",
+    "date": "06-02-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/102AnOddProjection.ogg"
@@ -723,6 +825,7 @@
   {
     "id": 103,
     "title": "Trokan's Lullaby",
+    "date": "06-04-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/103TrokansLullaby.ogg"
@@ -730,6 +833,7 @@
   {
     "id": 104,
     "title": "Dimensional Waves",
+    "date": "06-06-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/104DimensionalWaves.ogg"
@@ -737,6 +841,7 @@
   {
     "id": 105,
     "title": "Jatt's Lament",
+    "date": "06-08-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/105JattsLament.ogg"
@@ -744,6 +849,7 @@
   {
     "id": 106,
     "title": "Your Contract Has Ended.",
+    "date": "06-27-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/106YourContractHasEnded.ogg"
@@ -751,6 +857,7 @@
   {
     "id": 107,
     "title": "Finding Myself",
+    "date": "06-27-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/107FindingMyself.ogg"
@@ -758,6 +865,7 @@
   {
     "id": 108,
     "title": "Found Myself",
+    "date": "06-31-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/108FoundMyself.ogg"
@@ -765,6 +873,7 @@
   {
     "id": 109,
     "title": "Alienated Ores Trailer",
+    "date": "07-17-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/109AlienatedOresTrailer.ogg"
@@ -772,6 +881,7 @@
   {
     "id": 110,
     "title": "LoA Loading Theme",
+    "date": "09-04-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/110LoALoadingTheme.ogg"
@@ -779,6 +889,7 @@
   {
     "id": 111,
     "title": "The Starfaded",
+    "date": "09-10-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/111TheStarfaded.ogg"
@@ -786,6 +897,7 @@
   {
     "id": 112,
     "title": "Lunarios (Remake)",
+    "date": "09-13-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/112LunariosRemake.ogg"
@@ -793,6 +905,7 @@
   {
     "id": 113,
     "title": "Alzoran Territory",
+    "date": "09-20-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/113AlzoranTerritory.ogg"
@@ -800,6 +913,7 @@
   {
     "id": 114,
     "title": "Nightmare Bubbled",
+    "date": "10-03-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/114NightmareBubbled.ogg"
@@ -807,6 +921,7 @@
   {
     "id": 115,
     "title": "Fallen Star",
+    "date": "10-23-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/115FallenStar.ogg"
@@ -814,6 +929,7 @@
   {
     "id": 116,
     "title": "Abyss Intro",
+    "date": "11-8-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/116AbyssIntro.ogg"
@@ -821,6 +937,7 @@
   {
     "id": 117,
     "title": "Abyssal Star Reunion",
+    "date": "11-29-2019",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/117AbyssalStarReunion.ogg"
@@ -828,6 +945,7 @@
   {
     "id": 118,
     "title": "Seliric",
+    "date": "02-16-2020",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/118Seliric.ogg"
@@ -835,6 +953,7 @@
   {
     "id": 119,
     "title": "Rediscovered",
+    "date": "04-10-2020",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/119Rediscovered.ogg"
@@ -842,6 +961,7 @@
   {
     "id": 120,
     "title": "Starfade Mission Success",
+    "date": "??-??-2020",
     "album": "Old Album 2",
     "image": "radio/images/old_albumtwo_disc.png",
     "audio": "OldAlbumB/120MissionSuccessStarfade.ogg"
@@ -849,6 +969,7 @@
   {
     "id": 121,
     "title": "Traversing Through",
+    "date": "09-08-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/121TraversingThrough.ogg"
@@ -856,6 +977,7 @@
   {
     "id": 122,
     "title": "Unknown Depths",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/122UnknownDepths.ogg"
@@ -863,6 +985,7 @@
   {
     "id": 123,
     "title": "The Lullaby of Absence",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/123TheLullabyOfAbsence.ogg"
@@ -870,6 +993,7 @@
   {
     "id": 124,
     "title": "Low Lunar Orbit",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/124LowLunarOrbit.ogg"
@@ -877,6 +1001,7 @@
   {
     "id": 125,
     "title": "After Dark",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/125AfterDark.ogg"
@@ -884,6 +1009,7 @@
   {
     "id": 126,
     "title": "A Weary Success",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/126AWearySuccess.ogg"
@@ -891,6 +1017,7 @@
   {
     "id": 127,
     "title": "System Down",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/127SystemDown.ogg"
@@ -898,6 +1025,7 @@
   {
     "id": 128,
     "title": "Space Confinement",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/128SpaceConfinement.ogg"
@@ -905,6 +1033,7 @@
   {
     "id": 129,
     "title": "Distant Planet",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/129DistantPlanet.ogg"
@@ -912,6 +1041,7 @@
   {
     "id": 130,
     "title": "Dark Forged",
+    "date": "09-12-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/130DarkForged.ogg"
@@ -919,6 +1049,7 @@
   {
     "id": 131,
     "title": "Opportunity to Strike",
+    "date": "09-12-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/131OpportunityToStrike.ogg"
@@ -926,6 +1057,7 @@
   {
     "id": 132,
     "title": "Starmaps",
+    "date": "09-17-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/132Starmaps.ogg"
@@ -933,6 +1065,7 @@
   {
     "id": 133,
     "title": "Planets Nitrogen",
+    "date": "09-21-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/133PlanetsNitrogen.ogg"
@@ -940,6 +1073,7 @@
   {
     "id": 134,
     "title": "Disoriented",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/134Disoriented.ogg"
@@ -947,6 +1081,7 @@
   {
     "id": 135,
     "title": "Virtually Visual",
+    "date": "09-21-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/135VirtuallyVisual.ogg"
@@ -954,6 +1089,7 @@
   {
     "id": 136,
     "title": "False Promises and Betrayal",
+    "date": "09-21-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/136FalsePromisesAndBetrayal.ogg"
@@ -961,6 +1097,7 @@
   {
     "id": 137,
     "title": "ALX Encounter",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/137ALXEncounter.ogg"
@@ -968,6 +1105,7 @@
   {
     "id": 138,
     "title": "Aftermath",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/138Aftermath.ogg"
@@ -975,6 +1113,7 @@
   {
     "id": 139,
     "title": "Isle of Nightmares",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/139IsleOfNightmares.ogg"
@@ -982,6 +1121,7 @@
   {
     "id": 140,
     "title": "Unsatisfied",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/140Unsatisfied.ogg"
@@ -989,6 +1129,7 @@
   {
     "id": 141,
     "title": "Requiring More",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/141RequiringMore.ogg"
@@ -996,6 +1137,7 @@
   {
     "id": 142,
     "title": "Race to the Stars",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/142RaceToTheStars.ogg"
@@ -1003,6 +1145,7 @@
   {
     "id": 143,
     "title": "Insect Thought",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/143InsectThought.ogg"
@@ -1010,6 +1153,7 @@
   {
     "id": 144,
     "title": "Self Reflection",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/144SelfReflection.ogg"
@@ -1017,6 +1161,7 @@
   {
     "id": 145,
     "title": "Cavernous Emptiness",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/145CavernousEmptiness.ogg"
@@ -1024,6 +1169,7 @@
   {
     "id": 146,
     "title": "Faultline",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/146Faultline.ogg"
@@ -1031,6 +1177,7 @@
   {
     "id": 147,
     "title": "Moths Lullaby",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/147MothsLullaby.ogg"
@@ -1038,6 +1185,7 @@
   {
     "id": 148,
     "title": "Escape",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/148Escape.ogg"
@@ -1045,6 +1193,7 @@
   {
     "id": 149,
     "title": "Awakening",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/149Awakening.ogg"
@@ -1052,6 +1201,7 @@
   {
     "id": 150,
     "title": "Resting",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/150Resting.ogg"
@@ -1059,6 +1209,7 @@
   {
     "id": 151,
     "title": "Infiltration",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/151Infiltration.ogg"
@@ -1066,6 +1217,7 @@
   {
     "id": 152,
     "title": "Fitting In",
+    "date": "02-08-2021",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/152FittingIn.ogg"
@@ -1073,6 +1225,7 @@
   {
     "id": 153,
     "title": "Old Untitled 11",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/153OldUntitled11.ogg"
@@ -1080,6 +1233,7 @@
   {
     "id": 154,
     "title": "Old Untitled 12",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/154OldUntitled12.ogg"
@@ -1087,6 +1241,7 @@
   {
     "id": 155,
     "title": "Old Untitled 13",
+    "date": "??-??-2020",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/155OldUntitled13.ogg"
@@ -1094,6 +1249,7 @@
   {
     "id": 156,
     "title": "By the Water",
+    "date": "02-13-2021",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/156ByTheWater.ogg"
@@ -1101,6 +1257,7 @@
   {
     "id": 157,
     "title": "Original Starfade Intro (Remake)",
+    "date": "03-16-2021",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/157OriginalStarfadeIntroRemake.ogg"
@@ -1108,6 +1265,7 @@
   {
     "id": 158,
     "title": "Quiet Remorse",
+    "date": "02-21-2021",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/158QuietRemorse.ogg"
@@ -1115,6 +1273,7 @@
   {
     "id": 159,
     "title": "Waxing Moon",
+    "date": "03-26-2021",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/159WaxingMoon.ogg"
@@ -1122,6 +1281,7 @@
   {
     "id": 160,
     "title": "Overcharged",
+    "date": "02-25-2021",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/160Overcharged.ogg"
@@ -1129,6 +1289,7 @@
   {
     "id": 161,
     "title": "Seliric",
+    "date": "04-25-2021",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/161Seliric.ogg"
@@ -1136,6 +1297,7 @@
   {
     "id": 162,
     "title": "Archway",
+    "date": "05-03-2021",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/162Archway.ogg"
@@ -1143,6 +1305,7 @@
   {
     "id": 163,
     "title": "Plains of Solace",
+    "date": "05-02-2021",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/163PlainsOfSolace.ogg"
@@ -1150,6 +1313,7 @@
   {
     "id": 164,
     "title": "Phantasmagoria",
+    "date": "05-15-2021",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/164Phantasmagoria.ogg"
@@ -1157,6 +1321,7 @@
   {
     "id": 165,
     "title": "Brink of Cancellation",
+    "date": "06-04-2021",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/165BrinkOfCancellation.ogg"
@@ -1164,6 +1329,7 @@
   {
     "id": 166,
     "title": "Skies of Consolation",
+    "date": "05-14-2021",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/166SkiesOfConsolation.ogg"
@@ -1171,6 +1337,7 @@
   {
     "id": 167,
     "title": "Plazmlyte",
+    "date": "06-09-2021",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/167Plazmlyte.ogg"
@@ -1178,6 +1345,7 @@
   {
     "id": 168,
     "title": "Dependent",
+    "date": "07-05-2021",
     "album": "Old Album 3",
     "image": "radio/images/old_albumthree_disc.png",
     "audio": "OldAlbumC/168Dependent.ogg"
@@ -1185,6 +1353,7 @@
   {
     "id": 169,
     "title": "Clouded Realms",
+    "date": "07-30-2021",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/169CloudedRealms.ogg"
@@ -1192,6 +1361,7 @@
   {
     "id": 170,
     "title": "Forest Sunrise",
+    "date": "08-02-2021",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/170ForestSunrise.ogg"
@@ -1199,6 +1369,7 @@
   {
     "id": 171,
     "title": "Livid Agitation",
+    "date": "08-25-2021",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/171LividAgitation.ogg"
@@ -1206,6 +1377,7 @@
   {
     "id": 172,
     "title": "Bunny Meadow",
+    "date": "08-27-2021",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/172BunnyMeadow.ogg"
@@ -1213,6 +1385,7 @@
   {
     "id": 173,
     "title": "Frostbyte",
+    "date": "09-27-2021",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/173Frostbyte.ogg"
@@ -1220,6 +1393,7 @@
   {
     "id": 174,
     "title": "Abandoned",
+    "date": "10-27-2021",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/174Abandoned.ogg"
@@ -1227,6 +1401,7 @@
   {
     "id": 175,
     "title": "The Path",
+    "date": "12-13-2021",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/175ThePath.ogg"
@@ -1234,6 +1409,7 @@
   {
     "id": 176,
     "title": "Drowning in Toxicity",
+    "date": "12-24-2021",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/176DrowningInToxicity.ogg"
@@ -1241,6 +1417,7 @@
   {
     "id": 177,
     "title": "Repetitive",
+    "date": "02-01-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/177Repetitive.ogg"
@@ -1248,6 +1425,7 @@
   {
     "id": 178,
     "title": "Gentle Stars",
+    "date": "02-02-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/178GentleStars.ogg"
@@ -1255,6 +1433,7 @@
   {
     "id": 179,
     "title": "Night Owls Lullaby",
+    "date": "02-22-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/179NightOwlsLullaby.ogg"
@@ -1262,6 +1441,7 @@
   {
     "id": 180,
     "title": "Empty Space",
+    "date": "02-23-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/180EmptySpace.ogg"
@@ -1269,6 +1449,7 @@
   {
     "id": 181,
     "title": "Equinox",
+    "date": "02-24-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/181Equinox.ogg"
@@ -1276,6 +1457,7 @@
   {
     "id": 182,
     "title": "Cloud Watcher",
+    "date": "04-08-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/182CloudWatcher.ogg"
@@ -1283,6 +1465,7 @@
   {
     "id": 183,
     "title": "Overclocked Retaliation",
+    "date": "04-27-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/183OverclockedRetaliation.ogg"
@@ -1290,6 +1473,7 @@
   {
     "id": 184,
     "title": "Redroof Awning",
+    "date": "04-28-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/184RedroofAwning.ogg"
@@ -1297,6 +1481,7 @@
   {
     "id": 185,
     "title": "Duskgrove",
+    "date": "04-29-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/185Duskgrove.ogg"
@@ -1304,6 +1489,7 @@
   {
     "id": 186,
     "title": "Droplet of the Sky",
+    "date": "12-05-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/186DropletOfTheSky.ogg"
@@ -1311,6 +1497,7 @@
   {
     "id": 187,
     "title": "Outside",
+    "date": "12-06-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/187Outside.ogg"
@@ -1318,6 +1505,7 @@
   {
     "id": 188,
     "title": "Hytar",
+    "date": "12-07-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/188Hytar.ogg"
@@ -1325,6 +1513,7 @@
   {
     "id": 189,
     "title": "Arenas",
+    "date": "12-08-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/189Arenas.ogg"
@@ -1332,6 +1521,7 @@
   {
     "id": 190,
     "title": "Lunar Gateway",
+    "date": "12-10-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/190LunarGateway.ogg"
@@ -1339,6 +1529,7 @@
   {
     "id": 191,
     "title": "Satellite",
+    "date": "12-11-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/191Satellite.ogg"
@@ -1346,6 +1537,7 @@
   {
     "id": 192,
     "title": "Resolve",
+    "date": "12-13-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/192Resolve.ogg"
@@ -1353,6 +1545,7 @@
   {
     "id": 193,
     "title": "Unwanted",
+    "date": "12-14-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/193Unwanted.ogg"
@@ -1360,6 +1553,7 @@
   {
     "id": 194,
     "title": "Ultimatum",
+    "date": "12-15-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/194Ultimatum.ogg"
@@ -1367,6 +1561,7 @@
   {
     "id": 195,
     "title": "Downward",
+    "date": "12-16-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/195Downward.ogg"
@@ -1374,6 +1569,7 @@
   {
     "id": 196,
     "title": "Worm",
+    "date": "12-17-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/196Worm.ogg"
@@ -1381,6 +1577,7 @@
   {
     "id": 197,
     "title": "Out in the Open",
+    "date": "12-18-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/197OutInTheOpen.ogg"
@@ -1388,6 +1585,7 @@
   {
     "id": 198,
     "title": "Under the Waves",
+    "date": "12-19-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/198UnderTheWaves.ogg"
@@ -1395,6 +1593,7 @@
   {
     "id": 199,
     "title": "Forward",
+    "date": "12-20-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/199Forward.ogg"
@@ -1402,6 +1601,7 @@
   {
     "id": 200,
     "title": "Forge",
+    "date": "12-21-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/200Forge.ogg"
@@ -1409,6 +1609,7 @@
   {
     "id": 201,
     "title": "Over Yonder",
+    "date": "12-22-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/201OverYonder.ogg"
@@ -1416,6 +1617,7 @@
   {
     "id": 202,
     "title": "Its a Quiet Town Now",
+    "date": "12-23-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/202ItsAQuietTownNow.ogg"
@@ -1423,6 +1625,7 @@
   {
     "id": 203,
     "title": "Late",
+    "date": "12-24-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/203Late.ogg"
@@ -1430,6 +1633,7 @@
   {
     "id": 204,
     "title": "Kozirium",
+    "date": "12-25-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/204Kozirium.ogg"
@@ -1437,6 +1641,7 @@
   {
     "id": 205,
     "title": "World Consumed",
+    "date": "12-26-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/205WorldConsumed.ogg"
@@ -1444,6 +1649,7 @@
   {
     "id": 206,
     "title": "End of the World",
+    "date": "12-31-2022",
     "album": "Old Album 4",
     "image": "radio/images/old_albumfour_disc.png",
     "audio": "OldAlbumD/206EndOfTheWorld.ogg"

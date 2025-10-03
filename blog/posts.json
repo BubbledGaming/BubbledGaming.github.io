@@ -1,6 +1,13 @@
 {
   "posts": [
     {
+      "id": "p-3",
+      "title": "Another day, another update...",
+      "date": "10-03-2025",
+      "excerpt": "We've got some more features, such as a pause and play button, a volume slider, and a Track Info Display. I wanted to add more features but I'm pretty tired, haha. We'll see what tomorrow brings!",
+      "image": ""
+    },
+    {
       "id": "p-2",
       "title": "Felix Involvement!",
       "date": "10-02-2025",
