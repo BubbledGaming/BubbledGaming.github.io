@@ -103,23 +103,30 @@
     <script>
         document.getElementById('openTracklistBtn').addEventListener('click', function (e) {
             e.preventDefault();
-            fetch('radio/tracklist.txt')
-                .then(response => response.text())
-                .then(text => {
-                    // Convert lines starting with # to bigger headings
-                    const html = text.split('\n').map(line => {
-                        if (line.startsWith('# ')) {
-                            return `<div class="tracklist-h1">${line.substring(2)}</div>`;
-                        } else if (line.startsWith('## ')) {
-                            return `<div class="tracklist-h2">${line.substring(3)}</div>`;
-                        } else if (line.startsWith('### ')) {
-                            return `<div class="tracklist-h3">${line.substring(4)}</div>`;
-                        } else {
-                            return `<div>${line}</div>`;
-                        }
-                    }).join('');
+            fetch('radio/tracks.json')
+                .then(res => res.json())
+                .then(tracks => {
+                    // Group tracks by album and render
+                    const groups = {};
+                    tracks.forEach(t => {
+                        const album = t.album || 'Misc';
+                        if (!groups[album]) groups[album] = [];
+                        groups[album].push(t);
+                    });
+
+                    let html = '';
+                    Object.keys(groups).forEach(album => {
+                        html += `<div class="tracklist-h1">${album}</div>`;
+                        groups[album].forEach(t => {
+                            if (t.id) html += `<div><strong>${String(t.id).padStart(3,'0')}</strong> ${t.title}</div>`;
+                        });
+                    });
+
                     document.getElementById('tracklistContent').innerHTML = html;
                     document.getElementById('tracklistModal').style.display = 'flex';
+                })
+                .catch(err => {
+                    console.error('Failed to load track JSON', err);
                 });
         });
         document.getElementById('closeTracklistBtn').addEventListener('click', function () {
